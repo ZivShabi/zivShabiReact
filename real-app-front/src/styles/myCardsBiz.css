@@ -1,0 +1,69 @@
+.My-Cards {
+    color: white;
+    width: 20vw;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    line-height: 2;
+
+}
+
+.container-My-Cards {
+    margin: 16em auto;
+}
+
+.cards {
+    margin: 0 auto;
+}
+
+.buttonDelete {
+    width: 25vw;
+    padding: 1em;
+}
+
+.iconLike {
+    width: 25vw;
+    padding: 1em;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+
+}
+
+@media (max-width:767px) {
+    .My-Cards {
+        color: white;
+        margin: 2em;
+        width: 90vw;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        font-weight: bold;
+        line-height: 1.8;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .container-My-Cards {
+        margin: 16em auto;
+    }
+
+    .iconLike {
+        padding: 1em;
+        width: 90vw;
+
+    }
+
+    .buttonDelete {
+        padding: 1em;
+        width: 90vw;
+    }
+}

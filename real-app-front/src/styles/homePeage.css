@@ -1,0 +1,129 @@
+.container-Home-Page {
+    margin: 14em auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 14em auto;
+}
+
+.page-Cover-Title p {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    line-height: 1.6;
+    color: white;
+    width: 80vw;
+    margin: auto;
+}
+
+.page-Cover-Title h2 {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    line-height: 1.6;
+    color: white;
+    width: 80vw;
+    margin: auto;
+}
+
+.page-Cover-Title {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.section-table {
+    width: 80vw;
+    border-collapse: collapse;
+    background-color: #ffffffd5;
+    margin: auto;
+}
+
+.section-table th,
+.section-table td {
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+
+.section-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.section-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.logo {
+    display: flex;
+    margin: 6em;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    position: relative;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 70vw;
+}
+
+.logo-icon {
+    font-size: 5rem;
+    animation: rotate 4s linear infinite, glow 1.5s alternate infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+
+    100% {
+        text-shadow: 0 0 20px rgb(239, 255, 8);
+    }
+}
+
+.logo-text {
+    font-size: 2rem;
+    color: #007bff;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.logo-text:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.logo-text::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: -1;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 30px;
+}
+
+.logo-text:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

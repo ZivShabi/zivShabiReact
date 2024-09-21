@@ -1,0 +1,34 @@
+.sign-out-container {
+    background: #9c9fa1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-out-container h1 {
+    font-weight: bold;
+    color: #333;
+}
+
+.sign-out-container p {
+    color: #666;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+
+.container-Sign-Out {
+    padding: 16em 4em;
+}
+
+.Sign-Sign-Out h1 {
+    margin: 1em auto;
+    color: white;
+    font-weight: bold;
+}
+
+.Sign-Sign-Out {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+    line-height: 2.2;
+}

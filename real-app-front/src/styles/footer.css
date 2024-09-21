@@ -1,0 +1,27 @@
+.container-Footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-info p:hover {
+    color: #007bff;
+}
+
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+}

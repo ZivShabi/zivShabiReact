@@ -1,0 +1,155 @@
+.container-Cards {
+    margin: 10em;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90vw;
+}
+
+.container-Cards h1 {
+    color: white;
+    margin: 1em;
+    /* width: 70vw; */
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.business-card {
+    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+    width: 25vw;
+    background-color: #3f5574;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px black;
+    overflow: hidden;
+    padding: 1em 1.5em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.business-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.business-card-image {
+    width: 12vw;
+    height: 20vw;
+    border-radius: 30px;
+    object-fit: cover;
+    padding: 1em;
+}
+
+.business-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.business-card-opening-text {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.business-card-contact {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.business-card-phone,
+.business-card-address {
+    display: block;
+    font-size: 1em;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    transition: color 0.3s;
+}
+
+/* שרת */
+
+.pagination {
+    gap: 5px;
+    /* text-align: center; */
+    width: 70vw;
+}
+
+.pagination button {
+    padding: 8px 80px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 3em auto;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pagination button.active {
+    background-color: #0056b3;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width:767px) {
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 30vw;
+    }
+
+    .business-card {
+        background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+        min-width: 90vw;
+        background-color: #3f5574;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px black;
+        overflow: hidden;
+        padding: 1em 1.5em;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagination button {
+        padding: 8px 20px;
+        gap: 8px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .container-Cards {
+        margin: 25em auto;
+    }
+
+    .pagination {
+        gap: 5px;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .business-card-image {
+        width: 50vw;
+        height: auto;
+        border-radius: 30px;
+        object-fit: cover;
+        padding: 1em;
+    }
+}

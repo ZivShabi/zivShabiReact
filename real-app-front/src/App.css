@@ -1,0 +1,82 @@
+.container-Sign-In {
+  padding: 14em 4em;
+}
+
+.Sign-In h1 {
+  margin: 1em auto;
+  color: white;
+  font-weight: bold;
+}
+
+.Sign-In {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  line-height: 2.2;
+}
+
+
+
+.container-Sign-Up {
+  padding: 16em 4em;
+}
+
+.Sign-Up h1 {
+  margin: 1em auto;
+  color: white;
+  font-weight: bold;
+}
+
+.Sign-Up {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  line-height: 2.2;
+}
+
+.container-Sign-Up-Biz {
+  padding: 16em 4em;
+}
+
+.Sign-Sign-Up-Biz h1 {
+  margin: 1em auto;
+  color: white;
+  font-weight: bold;
+}
+
+.Sign-Sign-Up-Biz {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  line-height: 2.2;
+}
+
+
+body {
+  margin: 0;
+  background: linear-gradient(270deg, #126e6e, #173a62);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-Create-Card-Biz {
+  margin: 16em auto;
+}
+
+.Create-Card-Biz h2 {
+  margin: 1em auto;
+  color: white;
+  font-weight: bold;
+}
+
+.Create-Card-Biz {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  line-height: 2.2;
+}
+
+.container-My-Cards {
+  margin: 16em auto;
+}

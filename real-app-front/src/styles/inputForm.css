@@ -1,0 +1,24 @@
+.form-control {
+    border-radius: 0.375rem;
+    border-bottom: 0.6em solid #3f7cff;
+    padding: 0.6rem 2em;
+    font-size: 0.7rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: rgb(211, 226, 227);
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.25rem + 2.5rem);
+}
+
+.invalid-feedback {
+    font-size: 1rem;
+    color: #dc3545;
+}
