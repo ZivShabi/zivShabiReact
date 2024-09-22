@@ -19,7 +19,7 @@ function NavBar() {
     function handleSearchChange(event) {
         const query = event.target.value;
         setSearchQuery(query);
-        if (query && filteredCards.length > 0) {
+        if (query) {
             handleOpenModal()
         } else {
             handleCloseModal()
