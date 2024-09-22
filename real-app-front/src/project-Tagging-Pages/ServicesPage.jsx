@@ -5,7 +5,7 @@ function ServicesPage() {
     const serviceCards = useServiceCards()
 
     return (
-        <div className="container my-5 container-Services-Page">
+        <div className="container my-6 container-Services-Page">
             <div className="row text-center mb-4 page-Services-Cover-Title">
                 <DisplaysStructureSection
                     sectionTitle="Our Services"

@@ -15,10 +15,7 @@ function SignUpBiz() {
     const navigate = useNavigate()
     const [form, setForm] = useState({
         name: { first: '', middle: '', last: '' },
-        phone: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
+        phone: '', email: '', password: '', confirmPassword: '',
         image: { url: '', alt: '' },
         address: { state: '', country: '', city: '', street: '', houseNumber: '', zip: '' }
     });
@@ -61,7 +58,8 @@ function SignUpBiz() {
             const validationErrors = error.details.reduce((acc, curr) => {
                 acc[curr.path.join('.')] = curr.message
                 return acc
-            }, {}); setErrors(validationErrors)
+            }, {})
+            setErrors(validationErrors)
         } else {
             setErrors({})
             const payload = {
