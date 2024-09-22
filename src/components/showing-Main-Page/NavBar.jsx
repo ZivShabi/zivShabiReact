@@ -12,14 +12,17 @@ function NavBar() {
     const { user } = useAuth()
     const { searchQuery, setSearchQuery, filteredCards } = useSearch()
     const [showModal, setShowModal] = useState(false)
+    const [showModalSignUp, setShowModalSignUp] = useState(false)
 
+    const handleOpenModalSignUp = () => setShowModalSignUp(true)
+    const handleCloseModalSignUp = () => setShowModalSignUp(false)
     const handleOpenModal = () => setShowModal(true)
     const handleCloseModal = () => setShowModal(false)
 
     function handleSearchChange(event) {
         const query = event.target.value;
         setSearchQuery(query);
-        if (query) {
+        if (query && filteredCards.length > 0) {
             handleOpenModal()
         } else {
             handleCloseModal()
@@ -64,7 +67,7 @@ function NavBar() {
                                     <Link className="nav-link" to='/sign-in'> Sign In </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" onClick={handleOpenModal}>Sign Up</a>
+                                    <a className="nav-link" onClick={handleOpenModalSignUp}>Sign Up</a>
                                 </li>
                             </>
                         ) : (
@@ -107,9 +110,8 @@ function NavBar() {
                         <Link to="/sign-up-biz" className="btn btn-primary">Business Sign Up</Link>
                     </div>
                 }
-                showModal={showModal}
-                onClose={handleCloseModal}
-                onConfirm={handleCloseModal}
+                showModal={showModalSignUp}
+                onConfirm={handleCloseModalSignUp}
             />
             <Modal
                 id="searchResultsModal"
