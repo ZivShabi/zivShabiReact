@@ -3,7 +3,7 @@ import Modal from '../components/common/Modal'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/auth.Contexts'
 import { toast } from 'react-toastify'
-import '../styles/SignOut.css'
+import '../styles/signOut.css'
 function SignOut() {
     const navigate = useNavigate()
     const [showModal, setShowModal] = useState(false)
